@@ -1,13 +1,17 @@
 public class Main {
-        static void printStudent (String name, int age) {
-            System.out.println("   이름 : " + name);
-            System.out.println("   나이 : " + age );
-            System.out.println("==================");
-        }
     public static void main(String[] args) {
-        System.out.println("===학생 정보 출력===");
-        printStudent("Alice", 20);
-        printStudent("Bob", 22);
-        printStudent("Charlie", 25);
+        char asciiChar = 'A';
+        System.out.println("Character: " + asciiChar);
+
+        int asciicode = (int)asciiChar;
+        System.out.println("ASCII Code: " + asciicode);
+
+        char koreaChar = '가';
+        System.out.println("Character: " + koreaChar);
+
+        int unicodeCord = (int)koreaChar;
+        System.out.println("Unicode Code: U+" + Integer.toHexString(unicodeCord).toUpperCase());
+
+
     }
 }
